@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+p{
+    color: aliceblue;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(177, 177, 177);
+    background-repeat: no-repeat ;
+}
+
+#box{
+    position: relative;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 400px;
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(150deg, rgb(10, 46, 124),rgb(29, 106, 194));
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 5px 10px 30px rgb(0,0,0,1);
+    border: solid black 2px;
+}
+
+.start, .wrong, .correct, .win{
+    text-align: center;
+}
+
+.wrong, .correct, .win{
+    display: none;
+}
+
+.question{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+
+.inp{
+    display: none;
+    width: 100%;
+    height: 50%;
+}
+
+.day, .month, .answer{
+    margin: 10px;
+    height: 50px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgb(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+input{
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+
+#day_no, #month_no{
+    display: none;
+    text-shadow: 
+        0 0 5px rgb(255, 0, 0),
+        0 0 10px rgba(255, 0, 0, 0.571),
+        0 0 19px rgba(255, 0, 0, 0.251);
+    color: red;
+}
+
+.btn{
+    display: none;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    position: relative;
+    height: 35px;
+    width: 110px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 197, 255);
+    border-color: rgb(0, 55, 151);
+    border-radius: 8px;
+    box-shadow: 5 10px 20px rgb(0,0,0,2);
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.small{
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.6;
+}

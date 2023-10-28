@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <div class="start" id="start">
+            <p>В день нашего первого знакомства, я хочу, чтобы ты 
+                вспомнила некоторые первые яркие события наших отношений.
+                <br><br>Ты должна ответить на все вопросы.<br>(на русском)
+                <br>В случае ошибки, ты начнёшь заново.
+                <br><br>*Если не можешь ответить на вопрос, то расскажи
+                мне всё про то самое сабытие и я тебе помогу.
+                <br><br><span class="small">Чтобы продолжить, нажми сюда.</span></p>
+        </div>
+
+        <div class="wrong" id="wrong">
+            <p>Неправильно.
+                <br><br><span class="small">По жопке получишь!</span></p>
+        </div>
+
+        <div class="correct" id="correct">
+            <p id="correct_text"></p>
+            <p><br><span class="small">Чтобы продолжить, нажми сюда.</span></p>
+        </div>
+
+        <div class="win" id="win">
+            <p>Все эти моменты незабываемые и уникальные. Мы никогда не переживём это заново, 
+                не сможем ощутить те же эмоции, как и в первый раз. Вместо этого, в наших 
+                отношениях будет всё больше таких первых моментов, нас ещё многое ждёт впереди. 
+                Как бы там ни было, этот день нам точно не забыть. День, когда мы положили начало...
+                <br><br><span class="small">В любом случае получишь по жопке!</span></p>
+        </div>
+
+        <div class="question" id="question_box">
+            <p id="question"></p>
+        </div>
+
+        <div class="inp" id="input_box">
+            <div class="flex_row" id="day_box">
+                <div class="day">
+                    <input type="text" placeholder="День" id="day" onkeyup="checkDay(this.value)">
+                </div>
+                <p class="small">Ex: 1</p>
+            </div>
+            <span id="day_no">Нет такого числа.</span>
+
+            <div class="flex_row" id="month_box">
+                <div class="month">
+                    <input type="text" placeholder="Месяц" id="month" onkeyup="checkMonth(this.value)">
+                </div>
+                <p class="small">Ex: Январь</p>
+            </div>
+            <span id="month_no">Нет такого месяца.</span>
+
+            <div class="answer" id="answer_box">
+                <input type="text" placeholder="Ответ" id="answer">
+            </div>
+        </div>
+
+        <div class="btn" id="btn_box">
+            <button id="btn">
+                <span>Ответить</span>
+            </button>
+        </div>
+        
+                        
+    </div>
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
